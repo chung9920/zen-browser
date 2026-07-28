@@ -13,7 +13,6 @@ The `template` file is an XBPS template for Zen Browser.
 
 - Architecture: x86_64 only
 - Build style: precompiled binaries
-- Maintainer: SalahDin Rezk <salah2112004@gmail.com>
 
 The template file handles the installation of precompiled binaries and sets up the necessary dependencies.
 
@@ -23,7 +22,7 @@ To install the Zen Browser package:
 
 1. Clone the Void Packages repository:
    ```sh
-   git clone https://github.com/salastro/zen-browser.git
+   git clone https://github.com/chung9920/zen-browser.git
    ```
 2. Copy the directory to the `srcpkgs/zen-browser` directory in your Void Packages repository:
    ```sh
