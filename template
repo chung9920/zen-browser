@@ -6,7 +6,7 @@ only_for_archs="x86_64"
 wrksrc="${pkgname}-${version}"
 meta=yes
 short_desc="Minimalistic web browser"
-maintainer="SalahDin Rezk <salah2112004@gmail.com>"
+maintainer="chung9920 <ngodh03344@gmail.com>"
 license="MPL-2.0"
 homepage="https://www.zen-browser.app/"
 distfiles="https://github.com/zen-browser/desktop/releases/download/${version}/zen.linux-x86_64.tar.xz"
@@ -16,6 +16,14 @@ do_install() {
 		# Install the files
 		vmkdir usr/lib/zen-browser
 		vcopy * usr/lib/zen-browser
+
+    # icons
+    for size in 16 32 48 64 128; do
+        vinstall "${DESTDIR}/browser/chrome/icons/default/default${size}.png" 644 "usr/share/pixmaps/zen_${size}.png"
+    done
+
+    # install .desktop file
+    vinstall "${FILESDIR}/zen.desktop" 644 usr/share/applications
 
 		# link the binary
 		vmkdir usr/bin/
