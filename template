@@ -19,7 +19,7 @@ do_install() {
 
     # icons
     for size in 16 32 48 64 128; do
-        vinstall "${DESTDIR}/browser/chrome/icons/default/default${size}.png" 644 "usr/share/pixmaps/zen_${size}.png"
+        vinstall "/usr/bin/zen-browser/browser/chrome/icons/default/default${size}.png" 644 "usr/share/pixmaps/zen_${size}.png"
     done
 
     # install .desktop file
