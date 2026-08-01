@@ -2,7 +2,7 @@
 Name=Zen Browser
 Comment=Experience tranquility while browsing the web without people tracking you!
 Exec=zen %u
-Icon=/opt/zen-browser/browser/chrome/icons/default/default128.png
+Icon=zen-browser
 Type=Application
 Categories=Application;Network;WebBrowser;
 MimeType=text/html;text/xml;application/xhtml+xml;x-scheme-handler/http;x-scheme-handler/https;application/x-xpinstall;application/pdf;application/json;
