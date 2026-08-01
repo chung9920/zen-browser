@@ -21,8 +21,9 @@ do_install() {
 	vcopy * usr/lib/zen-browser
 
 	# icons
-	for size in 16 32 48 64 128; do
-		vinstall "${DESTDIR}/usr/lib/zen-browser/browser/chrome/icons/default/default${size}.png" 644 "usr/share/pixmaps/zen_${size}.png"
+  for i in 16x16 22x22 24x24 32x32 48x48 128x128 256x256; do
+		vinstall ${DESTDIR}/usr/lib/zen-browser/browser/chrome/icons/default${i}.png 644 \
+			usr/share/icons/hicolor/${i}/apps zen-browser.png
 	done
 
 	# install .desktop file
